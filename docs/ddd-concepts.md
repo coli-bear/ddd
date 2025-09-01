@@ -69,4 +69,29 @@ flowchart LR
 > - 외부에서는 `Order`를 통해서만 주문 항목에 접근할 수 있다.
 > - `Order`는 주문의 상태를 변경하거나 항목을 추가/삭제하는 메서드를 제공한다.
 
-
+```mermaid
+classDiagram
+    class Order {
+        - orderId: UUID
+        - orderStatus: Status
+        - orderItems: List<OrderItem>
+        + addItem(productId, quantity): void 
+        + removeItem(productId): void
+        + changeStatus(newStatus: Status): void
+        + calculateTotal(): Money
+    }
+    class OrderItem {
+        - productId: UUID
+        - quantity: int
+        - price: Money
+    }
+    
+    class Money {
+        - amount: Decimal 
+        - currency: String
+    }
+    
+    Order "1" o-- "*" OrderItem : contains
+    OrderItem "*" --> "1" Money : value object 
+    Order "1" --> "1" Money : value object
+```
