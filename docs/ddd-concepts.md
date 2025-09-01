@@ -93,5 +93,4 @@ classDiagram
     
     Order "1" o-- "*" OrderItem : contains
     OrderItem "*" --> "1" Money : value object 
-    Order "1" --> "1" Money : value object
 ```
