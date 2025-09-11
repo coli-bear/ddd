@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="ddd-strategic-patterns" external.linked.project.path="$MODULE_DIR$/ddd-strategic-patterns" external.root.project.path="$MODULE_DIR$/ddd-strategic-patterns" external.system.id="GRADLE" external.system.module.group="com.study" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_21" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/ddd-strategic-patterns">
+      <excludeFolder url="file://$MODULE_DIR$/ddd-strategic-patterns/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/ddd-strategic-patterns/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
